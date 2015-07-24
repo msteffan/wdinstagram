@@ -1,0 +1,28 @@
+* {
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-column {
+    width: 60%;
+    margin: 0 auto;
+    /*text-align: center;*/
+
+}
+/*
+.entry-info {
+
+}*/
+
+.entry-item {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+button {
+    float: right;
+    margin-top: 20px
+}

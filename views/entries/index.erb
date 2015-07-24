@@ -1,0 +1,21 @@
+<h4><a href="/entries/new">Add a New Corgi</a></h4>
+
+<% @entries.each do | entry | %>
+
+<a href="/entries/<%=entry.id%>"><img src="<%= entry.photo_url %>" alt="" /></a>
+<div class="entry-info">
+    <p class="entry-item">
+        Author: <%= entry.author %>
+    | </p>
+    <p class="entry-item">
+        Date: <%= entry.date_taken %>
+    | </p>
+    <p class="entry-item">
+        Caption: <%= entry.caption %>
+    </p>
+
+    <button type="button" name="button">Like</button>
+</div>
+
+
+<% end %>

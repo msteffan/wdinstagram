@@ -1,6 +1,3 @@
-## Before You Start...
-
-Hooray, a quiz! [https://wdidc6.typeform.com/to/cSxB3l](https://wdidc6.typeform.com/to/cSxB3l)
 
 ##WDInstagram
 
@@ -26,7 +23,14 @@ Your app should have the following RESTful actions:
 ### Instructions
 
 1. Write 5 user stories for your app.
-  * Keep it simple and think about what functionality your MVP needs.
+* Keep it simple and think about what functionality your MVP needs.
+    User stories:
+        1. As a user, I want an index with a list view so I can see all of the previous entries
+        2. As a user, I want a show page so I can see details about one specific entry
+        3. As a user, I want a 'new' page so I can submit my new entry
+        4. As a user, I want an "edit" page so I can update my previous entries
+        5. As a user, I want a 'delete' button so I can remove the posts that I hate
+
 2. Create a database: `$ createdb wdinstagram`
 3. Create an Entry model
 4. Create a `wdinstagram_schema.sql` schema file and generate a table for your Entry model.

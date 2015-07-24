@@ -1,0 +1,13 @@
+<h2>An Awesome Corgi <a href="/entries/<%=@entry.id%>/edit">(edit)</a></h2>
+
+<img src="<%= @entry.photo_url%>" alt="a corgi" />
+
+<p>
+    Author: <%= @entry.author %>
+</p>
+<p>
+    Date: <%= @entry.date_taken %>
+</p>
+<p>
+    Caption: <%= @entry.caption %>
+</p>
