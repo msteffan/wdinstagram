@@ -4,6 +4,7 @@
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 .main-column {
@@ -12,8 +13,9 @@ h1 {
     /*text-align: center;*/
 
 }
-/*
-.entry-info {
+
+/*.entry-info {
+    background-color: white;
 
 }*/
 
@@ -25,4 +27,8 @@ h1 {
 button {
     float: right;
     margin-top: 20px
+}
+
+button:clicked {
+
 }
