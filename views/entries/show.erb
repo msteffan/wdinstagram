@@ -11,3 +11,15 @@
 <p>
     Caption: <%= @entry.caption %>
 </p>
+comments
+<% @entry.comments.each do |comment| %>
+  <p>
+    <%= comment.body %>
+  </p>
+  <p>
+    By: <%= comment.name %>
+  </p>
+  <p>
+    at: <%= comment.date_taken %>
+  </p>
+<% end %>
