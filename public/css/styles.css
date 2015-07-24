@@ -41,3 +41,7 @@ button:clicked {
 .authors-pics {
   display: block;
 }
+
+.hidden-input {
+    display: none;
+}

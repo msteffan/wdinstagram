@@ -11,30 +11,31 @@
 # end
 
 # create
-post "/comments" do
+post "/entries/:id" do
   @comment = Comment.create(params[:comment])
-  redirect "/comments"
+  @entry = Entry.find(params[:id])
+  redirect "/entries/#{@entry.id}"
 end
-
-# show
-get "/comments/:id" do
-  @comment = Comment.find(params[:id])
-  erb :"comments/show"
-end
-
-# edit
-get "/comments/:id/edit" do
-  @comment = Comment.find(params[:id])
-  erb :"comments/edit"
-end
-
-put "/comments/:id" do
-  @comment = Comment.find(params[:id])
-  @comment.update(params[:comment])
-end
-
-delete "/comments/:id" do
-  @comment = Comment.find(params[:id])
-  @comment.destroy
-  redirect "/"
-end
+#
+# # show
+# get "/comments/:id" do
+#   @comment = Comment.find(params[:id])
+#   erb :"comments/show"
+# end
+#
+# # edit
+# get "/comments/:id/edit" do
+#   @comment = Comment.find(params[:id])
+#   erb :"comments/edit"
+# end
+#
+# put "/comments/:id" do
+#   @comment = Comment.find(params[:id])
+#   @comment.update(params[:comment])
+# end
+#
+# delete "/comments/:id" do
+#   @comment = Comment.find(params[:id])
+#   @comment.destroy
+#   redirect "/"
+# end

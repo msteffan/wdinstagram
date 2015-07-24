@@ -23,3 +23,19 @@ comments
     at: <%= comment.date_taken %>
   </p>
 <% end %>
+<h3>Leave a comment!</h3>
+<form action="/entries/<%=@entry.id%>" method="post">
+    <label>Body</label>
+    <input type="text" name="comment[body]">
+
+    <label>Name</label>
+    <input type="text" name="comment[name]">
+
+    <label>Date</label>
+    <input type="text" name="comment[date_taken]">
+
+    <input class="hidden-input" type="text" name="comment[entry_id]" value="<%=@entry.id%>">
+
+    <input type="submit" value="Comment on This Corgi">
+
+</form>
