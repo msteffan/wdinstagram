@@ -2,6 +2,6 @@
 
 <% @authors.each do |author| %>
   <ul>
-    <li><%= author.name %></li>
+    <a href="/authors/<%=author.id%>"<li><%= author.name %></li></a>
   </ul>
 <% end %>
