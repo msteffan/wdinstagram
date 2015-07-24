@@ -11,18 +11,22 @@
 <p>
     Caption: <%= @entry.caption %>
 </p>
-comments
-<% @entry.comments.each do |comment| %>
-  <p>
-    <%= comment.body %>
-  </p>
-  <p>
-    By: <%= comment.name %>
-  </p>
-  <p>
-    at: <%= comment.date_taken %>
-  </p>
-<% end %>
+<h3>Comments on This Corgi</h3>
+
+    <% @entry.comments.each do |comment| %>
+      <div class="comment-box">
+      <p>
+        <%= comment.body %>
+      </p>
+      <p>
+        By: <%= comment.name %>
+      </p>
+      <p>
+        at: <%= comment.date_taken %>
+      </p>
+      </div>
+    <% end %>
+
 <h3>Leave a comment!</h3>
 <form action="/entries/<%=@entry.id%>" method="post">
     <label>Body</label>

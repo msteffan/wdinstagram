@@ -1,37 +1,36 @@
-* {
-    background-color: red;
+body {
+    background-color: #FAFAFA;
+    color: #004879;
 }
 
 h1 {
     text-align: center;
-    color: white;
+    color: #004879;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 1.5em;
 }
 
 .main-column {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
-    /*text-align: center;*/
-
 }
 
-/*.entry-info {
+.entry-info {
     background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
 
-}*/
+}
 
 .entry-item {
     display: inline-block;
     font-size: 1.5em;
 }
 
-/*button {
-    float: right;
-    margin-top: 20px
-}
-
-button:clicked {
-
-}*/
 
 
 .prof-pic {
@@ -44,4 +43,24 @@ button:clicked {
 
 .hidden-input {
     display: none;
+}
+
+.comment-box {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+form {
+
+}
+
+label {
+
+}
+
+input {
+    display: block;
+    margin-bottom: 25px;
+    height: 30px;
+    width: 300px;
 }

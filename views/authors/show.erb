@@ -4,9 +4,9 @@
 </p>
 <img class="prof-pic" src="<%= @author.prof_pic %>" alt="" />
 
-<p>
+<h3>
   Photos:
-</p>
+</h3>
 <% @author.entries.each do |entry| %>
   <a href="/entries/<%= entry.id %>"><img class="authors-pics" src="<%= entry.photo_url %>" alt="" /></a>
 <% end %>
