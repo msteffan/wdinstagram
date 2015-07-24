@@ -5,7 +5,7 @@
 <a href="/entries/<%=entry.id%>"><img src="<%= entry.photo_url %>" alt="" /></a>
 <div class="entry-info">
     <p class="entry-item">
-        Author: <%= entry.author.name %>
+        Author: <a href="/authors/<%= entry.author.id %>"><%= entry.author.name %></a>
     | </p>
     <p class="entry-item">
         Date: <%= entry.date_taken %>

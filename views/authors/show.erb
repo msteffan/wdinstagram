@@ -1,0 +1,12 @@
+<h2><%= @author.name %>'s Profile Page <a href="/authors/<%= @author.id %>/edit">Edit</a></h2>
+<p>
+  <%= @author.bio %>
+</p>
+<img class="prof-pic" src="<%= @author.prof_pic %>" alt="" />
+
+<p>
+  Photos:
+</p>
+<% @author.entries.each do |entry| %>
+  <a href="/entries/<%= entry.id %>"><img class="authors-pics" src="<%= entry.photo_url %>" alt="" /></a>
+<% end %>

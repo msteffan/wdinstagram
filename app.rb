@@ -13,3 +13,5 @@ require_relative "models/comment"
 
 # conroller(s)
 require_relative "controllers/entries"
+require_relative "controllers/authors"
+require_relative "controllers/comments"

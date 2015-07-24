@@ -3,8 +3,8 @@
 <form action="/entries/<%= @entry.id %>" method="post">
     <input type="hidden" name="_method" value="put">
 
-    <label>Author:</label>
-    <input type="text" name="entry[author]" value="<%=@entry.author%>">
+    <label>Author Id:</label>
+    <input type="text" name="entry[author_id]" value="<%=@entry.author_id%>">
 
     <label>Photo URL:</label>
     <input type="text" name="entry[photo_url]" value="<%=@entry.photo_url%>">

@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS entries;
 DROP TABLE IF EXISTS authors;
+DROP TABLE IF EXISTS entries;
 DROP TABLE IF EXISTS comments;
 
 CREATE TABLE authors (

@@ -3,7 +3,7 @@
 <img src="<%= @entry.photo_url%>" alt="a corgi" />
 
 <p>
-    Author: <%= @entry.author %>
+    Author: <a href="/authors/<%= @entry.author.id %>"><%= @entry.author.name %></a>
 </p>
 <p>
     Date: <%= @entry.date_taken %>

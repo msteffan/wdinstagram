@@ -1,0 +1,21 @@
+<h2>Edit This Author</h2>
+
+<form action="/authors/<%= @author.id %>" method="post">
+    <input type="hidden" name="_method" value="put">
+
+    <label>Name</label>
+    <input type="text" name="author[name]" value="<%=@author.name%>">
+
+    <label>Profile Pic:</label>
+    <input type="text" name="author[prof_pic]" value="<%=@author.prof_pic%>">
+
+    <label>Bio:</label>
+    <input type="text" name="author[bio]" value="<%=@author.bio%>">
+
+    <input type="submit" value="Update This Author">
+</form>
+
+<form action="/authors/<%= @author.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Remove This Author">
+</form>

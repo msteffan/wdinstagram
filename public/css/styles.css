@@ -24,11 +24,20 @@ h1 {
     font-size: 1.5em;
 }
 
-button {
+/*button {
     float: right;
     margin-top: 20px
 }
 
 button:clicked {
 
+}*/
+
+
+.prof-pic {
+  height: 50%;
+  width: 25%;
+}
+.authors-pics {
+  display: block;
 }
